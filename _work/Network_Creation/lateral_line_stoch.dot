@@ -1,0 +1,118 @@
+digraph SMP {
+
+concentrate = true;
+
+
+//***********************************************Defining Clusters and Nodes***************************************************************
+
+
+
+
+
+
+	subgraph cluster_right {
+
+		label = "Right Side";
+
+		subgraph cluster_sensory_neurons_right {
+
+			label = "Sensory Neurons of the Right Side";
+
+			"Sens_R1";  "Sens_R2";  "Sens_R3";  "Sens_R4";  "Sens_R5";  
+			"Sens_R6";  "Sens_R7";  "Sens_R8";  "Sens_R9";  "Sens_R10";  
+			"Sens_R11";  "Sens_R12";  "Sens_R13";  "Sens_R14";  "Sens_R15";  
+			"Sens_R16";  "Sens_R17";  "Sens_R18";  "Sens_R19";  "Sens_R20";  
+						}
+
+
+		subgraph cluster_neuromasts_right {
+
+			label = "Neuromasts of the Right Side";
+
+			"Neuromast_R1";  "Neuromast_R2";  "Neuromast_R3";  "Neuromast_R4";  "Neuromast_R5";  
+			"Neuromast_R6";  "Neuromast_R7";  "Neuromast_R8";  "Neuromast_R9";  "Neuromast_R10"; 
+			"Neuromast_R11";  "Neuromast_R12";  "Neuromast_R13";  "Neuromast_R14";  "Neuromast_R15";
+					}
+
+
+				}
+
+
+
+
+
+
+	subgraph cluster_left {
+
+		label = "Left Side";
+
+		subgraph cluster_sensory_neurons_left {
+
+			label = "Sensory Neurons of the Left Side";
+
+			"Sens_L1";  "Sens_L2";  "Sens_L3";  "Sens_L4";  "Sens_L5";  
+			"Sens_L6";  "Sens_L7";  "Sens_L8";  "Sens_L9";  "Sens_L10";  
+			"Sens_L11";  "Sens_L12";  "Sens_L13";  "Sens_L14";  "Sens_L15";  
+			"Sens_L16";  "Sens_L17";  "Sens_L18";  "Sens_L19";  "Sens_L20";  
+						}
+
+
+		subgraph cluster_neuromasts_left {
+
+			label = "Neuromasts of the Left Side";
+
+			"Neuromast_L1";  "Neuromast_L2";  "Neuromast_L3";  "Neuromast_L4";  "Neuromast_L5";  
+			"Neuromast_L6";  "Neuromast_L7";  "Neuromast_L8";  "Neuromast_L9";  "Neuromast_L10";  
+			"Neuromast_L11";  "Neuromast_L12";  "Neuromast_L13";  "Neuromast_L14";  "Neuromast_L15";
+					}
+
+				}
+
+//********************************************************************************************************************************************
+//**************************************************Connections go Here******************************************************************
+
+//ex connection:  "Sens_L1" -> "Neuromast_L1";
+
+
+
+"Neuromast_L14" -> "Sens_L17";  "Neuromast_L1" -> "Sens_L18";  "Neuromast_L6" -> "Sens_L15";  
+"Neuromast_L13" -> "Sens_L1";  "Neuromast_L5" -> "Sens_L3";  "Neuromast_L3" -> "Sens_L9";  
+"Neuromast_L7" -> "Sens_L11";  "Neuromast_L15" -> "Sens_L4";  
+
+"Neuromast_L15" -> "Sens_L16";  "Neuromast_L10" -> "Sens_L16";  "Neuromast_L10" -> "Sens_L12";  "Neuromast_L2" -> "Sens_L12";  
+"Neuromast_L2" -> "Sens_L5";  "Neuromast_L11" -> "Sens_L5";  "Neuromast_L11" -> "Sens_L7";  "Neuromast_L12" -> "Sens_L7";  
+"Neuromast_L12" -> "Sens_L6";  "Neuromast_L4" -> "Sens_L6";  "Neuromast_L4" -> "Sens_L20";  "Neuromast_L9" -> "Sens_L20";  
+"Neuromast_L9" -> "Sens_L8";  "Neuromast_L8" -> "Sens_L8";  
+
+"Neuromast_L1" -> "Sens_L10";  "Neuromast_L6" -> "Sens_L10";  "Neuromast_L3" -> "Sens_L10";  
+"Neuromast_L6" -> "Sens_L19";  "Neuromast_L3" -> "Sens_L19";  "Neuromast_L12" -> "Sens_L19";  
+"Neuromast_L3" -> "Sens_L14";  "Neuromast_L12" -> "Sens_L14";  "Neuromast_L11" -> "Sens_L14";  
+
+"Neuromast_L12" -> "Sens_L2";  "Neuromast_L11" -> "Sens_L2";  "Neuromast_L2" -> "Sens_L2";  "Neuromast_L13" -> "Sens_L2";  
+
+"Neuromast_L14" -> "Sens_L13";  "Neuromast_L5" -> "Sens_L13";  "Neuromast_L10" -> "Sens_L13";  "Neuromast_L8" -> "Sens_L13";  "Neuromast_L15" -> "Sens_L13";  
+
+
+
+
+"Neuromast_R14" -> "Sens_R17";  "Neuromast_R1" -> "Sens_R18";  "Neuromast_R6" -> "Sens_R15";  
+"Neuromast_R13" -> "Sens_R1";  "Neuromast_R5" -> "Sens_R3";  "Neuromast_R3" -> "Sens_R9";  
+"Neuromast_R7" -> "Sens_R11";  "Neuromast_R15" -> "Sens_R4";  
+
+"Neuromast_R15" -> "Sens_R16";  "Neuromast_R10" -> "Sens_R16";  "Neuromast_R10" -> "Sens_R12";  "Neuromast_R2" -> "Sens_R12";  
+"Neuromast_R2" -> "Sens_R5";  "Neuromast_R11" -> "Sens_R5";  "Neuromast_R11" -> "Sens_R7";  "Neuromast_R12" -> "Sens_R7";  
+"Neuromast_R12" -> "Sens_R6";  "Neuromast_R4" -> "Sens_R6";  "Neuromast_R4" -> "Sens_R20";  "Neuromast_R9" -> "Sens_R20";  
+"Neuromast_R9" -> "Sens_R8";  "Neuromast_R8" -> "Sens_R8";  
+
+"Neuromast_R1" -> "Sens_R10";  "Neuromast_R6" -> "Sens_R10";  "Neuromast_R3" -> "Sens_R10";  
+"Neuromast_R6" -> "Sens_R19";  "Neuromast_R3" -> "Sens_R19";  "Neuromast_R12" -> "Sens_R19";  
+"Neuromast_R3" -> "Sens_R14";  "Neuromast_R12" -> "Sens_R14";  "Neuromast_R11" -> "Sens_R14";  
+
+"Neuromast_R12" -> "Sens_R2";  "Neuromast_R11" -> "Sens_R2";  "Neuromast_R2" -> "Sens_R2";  "Neuromast_R13" -> "Sens_R2";  
+
+"Neuromast_R14" -> "Sens_R13";  "Neuromast_R5" -> "Sens_R13";  "Neuromast_R10" -> "Sens_R13";  "Neuromast_R8" -> "Sens_R13";  "Neuromast_R15" -> "Sens_R13";  
+
+
+
+ 
+

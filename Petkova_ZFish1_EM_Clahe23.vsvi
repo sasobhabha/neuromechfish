@@ -1,0 +1,183 @@
+{
+  "Comment": "Mariela Petkova, Michal Januszewski, Florian Engert, Jeff Lichtman, Harvard, Google, Zebrafish 1 EM Data",
+  "ServerType": "http",
+
+  "ServerName": "storage.googleapis.com",
+  "ServerPort": 443,
+  "LoopbackPort": 9004,
+
+  "NumberOfImageLoaders": 4,
+
+  "SourceFileNameTemplate": "/fish1-public/clahe_231218/%s/", 
+  "SourceParamSequence": "f",
+
+  "MipMapFileNameTemplate": "/fish1-public/clahe_231218/%s/",
+  "MipMapParamSequence": "f",
+  "SourceMinM": 1,
+  "SourceMaxM": 10,
+  "MipMapZScaling": "1 1 2 2 2 2 2 2 2 2 2",
+
+  "SourceBytesPerPixel": 1,
+  "SourceDataEncoding": "neuroglancer_sharded",
+  "MissingImagePolicy": "black",
+
+  "neuroglancer_sharded": [
+         "mip0" : {
+           "key" : "8.0x8.0x30.0",
+           "chunk_sizes" : [ 128, 128, 32 ],
+           "size" : [280000,65000,8689],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 6,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 9,
+           "shard_bits" : 15
+         },
+         "mip1" : {
+           "key" : "16.0x16.0x30.0",
+           "chunk_sizes" : [ 128, 128, 64 ],
+           "size" : [140000,32500,8689],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 6,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 9,
+           "shard_bits" : 12
+         },
+         "mip2" : {
+           "key" : "32.0x32.0x30.0",
+           "chunk_sizes" : [ 64, 64, 64 ],
+           "size" : [70000,16250,8689],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 6,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 9,
+           "shard_bits" : 12
+         },
+         "mip3" : {
+           "key" : "64.0x64.0x60.0",
+           "chunk_sizes" : [ 64, 64, 64 ],
+           "size" : [35000,8125,4345],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 6,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 9,
+           "shard_bits" : 9
+         },
+         "mip4" : {
+           "key" : "128.0x128.0x120.0",
+           "chunk_sizes" : [ 64, 64, 64 ],
+           "size" : [17500,4063,2173],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 6,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 9,
+           "shard_bits" : 6
+         },
+         "mip5" : {
+           "key" : "256.0x256.0x240.0",
+           "chunk_sizes" : [ 64, 64, 64 ],
+           "size" : [8750,2032,1087],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 6,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 9,
+           "shard_bits" : 3
+         },
+         "mip6" : {
+           "key" : "512.0x512.0x480.0",
+           "chunk_sizes" : [ 64, 64, 64 ],
+           "size" : [4375,1016,544],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 6,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 9,
+           "shard_bits" : 0
+         },
+         "mip7" : {
+           "key" : "1024.0x1024.0x960.0",
+           "chunk_sizes" : [ 64, 64, 64 ],
+           "size" : [2188,508,272],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 3,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 9,
+           "shard_bits" : 0
+         },
+         "mip8" : {
+           "key" : "2048.0x2048.0x1920.0",
+           "chunk_sizes" : [ 64, 64, 64 ],
+           "size" : [1094,254,136],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 0,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 9,
+           "shard_bits" : 0
+         },
+         "mip9" : {
+           "key" : "4096.0x4096.0x3840.0",
+           "chunk_sizes" : [ 64, 64, 64 ],
+           "size" : [547,127,68],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 0,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 6,
+           "shard_bits" : 0
+         },
+         "mip10" : {
+           "key" : "8192.0x8192.0x7680.0",
+           "chunk_sizes" : [ 64, 64, 64 ],
+           "size" : [274,64,34],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 0,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 3,
+           "shard_bits" : 0
+         },
+         "mip11" : {
+           "key" : "16384.0x16384.0x15360.0",
+           "chunk_sizes" : [ 64, 64, 64 ],
+           "size" : [137,32,17],
+           "encoding" : "jpeg",
+           "@type" : "neuroglancer_uint64_sharded_v1",
+           "hash" : "identity",
+           "minishard_bits" : 0,
+           "minishard_index_encoding" : "gzip",
+           "preshift_bits" : 2,
+           "shard_bits" : 0
+         }
+  ],
+
+  "TargetDataSizeX": 280000,
+  "TargetDataSizeY": 65000,
+  "TargetDataSizeZ": 8689,
+  "OffsetX": 0,
+  "OffsetY": 0,
+  "OffsetZ": 0,
+  "OffsetMip": 0,
+  "TargetVoxelSizeXnm": 8.000000,
+  "TargetVoxelSizeYnm": 8.000000,
+  "TargetVoxelSizeZnm": 30.000000,
+  "TargetLayerName": "Petkova_ZFish1_EM_Clahe23",
+}
+

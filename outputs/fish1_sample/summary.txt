@@ -1,0 +1,10 @@
+Fish1 sample export
+descriptor prefix EM    : /fish1-public/clahe_231218
+descriptor prefix base  : /fish1-public/seg_241003
+descriptor prefix agglo : /fish1-public/seg_241003_agg241003
+ROI centre (16 nm vox): (37882, 19183, 6682)
+ROI size (x,y,z)     : (192, 160, 16)
+EM block             : dtype=uint8 range=[0,255]
+supervoxel labels    : 17
+agglomerated labels  : 8
+displayed z-slice    : 8
